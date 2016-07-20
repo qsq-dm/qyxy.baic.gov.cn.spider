@@ -3,7 +3,10 @@ __author__ = 'zhaojm'
 
 import pymongo
 
-from qianzhan_spider.settings import MONGO_URI, MONGO_DB, MONGO_NEEQ_DB
+# MONGO
+MONGO_URI = "localhost:27017"
+MONGO_DB = "qyxy.baic.gov.cn"
+MONGO_NEEQ_DB = "neeq"
 
 mongo_client = pymongo.MongoClient(MONGO_URI)
 db = mongo_client[MONGO_DB]

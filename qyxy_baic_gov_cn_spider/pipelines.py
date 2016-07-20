@@ -6,7 +6,7 @@
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
 from scrapy.exceptions import DropItem
-from qianzhan_spider.db.mongo import CompanyInfoItemsDB
+from .db.mongo import CompanyInfoItemsDB
 # from utils import require_value_from_dict
 from items import CompanyInfoItem
 
